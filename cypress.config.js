@@ -11,6 +11,6 @@ module.exports = defineConfig({
     },
   },
   env: {
-    baseUrl: "https://advantageonlineshopping.com/#/"
+    baseUrl: "https://advantageonlineshopping.com"
   },
 });
