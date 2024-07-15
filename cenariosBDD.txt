@@ -1,0 +1,69 @@
+--Feature Busca
+
+Dado que estou na home
+Quando clico no ícone de busca e digito o nome de um produto disponível
+Então o site deverá retornar o resultado condizente com a busca
+
+Dado que estou na home 
+Quando clico no ícone de busca e digito o nome de um produto indisponível
+Então o site deverá retornar que não foram encontrados resultados para a busca
+
+Dado que estou na home
+Quando clico no ícone de busca e digito o nome composto(2 palavras com espaço entre elas) de um produto disponível
+Então o site deverá retornar o resultado condizente com a busca
+
+Dado que estou na home
+Quando clico no ícone de busca e digito o nome de um produto com acento
+Então o site deverá retornar o resultado condizente com a busca
+
+Dado que estou na home
+Quando clico no ícone de busca e digito o nome de uma marca
+Então o site deverá retornar o resultado condizente com a busca
+
+--Feature Carrinho
+
+Dado que estou na página do produto
+Quando clico para adicionar ao Carrinho
+Então o produto deverá ser adicionado no carrinho
+
+Dado que estou na página do produto
+Quando edito a quantidade para 2 clico para adicionar ao Carrinho
+Então o produto deverá ser adicionado no carrinho
+
+Dado que estou na página do produto
+Quando edito o modelo do produto clico para adicionar ao Carrinho
+Então o produto deverá ser adicionado no carrinho
+
+Dado que estou na página do produto
+Quando edito o modelo do produto clico para adicionar ao Carrinho
+Então o produto deverá ser adicionado no carrinho
+
+Dado que estou na página do produto
+Quando dou duplo click em cima do botão adicionar ao Carrinho
+Então o produto deverá ser adicionado x2 no carrinho
+
+Dado que estou na página de um produto sem estoque disponível
+Quando tento clicar no botão adicionar ao Carrinho
+Então não deverá acontecer nada.
+
+--Featire checkout
+
+Dado que eu possua 1 produto no carrinho
+Quando clico para ir para a página de pagamento
+Então deverá ser exibido no sumário, o produto que eu possua em meu carrinho
+
+Dado que eu possua 2 produtos no carrinho
+Quando clico para ir para a página de pagamento
+Então deverá ser exibido no sumário, os produtos que eu possua em meu carrinho
+
+Dado que eu possua 1 produto no carrinho e não estou logado
+Quando clico para ir para a página de pagamento
+Então deverá ser exibido o sumário com os meus ítens do carrinho e as opções para realizar login ou realizar cadastro no site
+
+Dado que eu possua 1 produto no carrinho e estou logado
+Quando clico para ir para a página de pagamento
+Então deverá ser exibido o sumário com os meus ítens do carrinho e os detalhes do endereço de entrega.
+
+Dado que eu possua 2 produtos iguais, porém de cores diferentes no carrinho
+Quando clico para ir para a página de pagamento
+Então deverá ser exibido o sumário com os dois produtos e abaixo as descrições das cores deles
