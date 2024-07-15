@@ -12,7 +12,7 @@ describe('template spec', () => {
     cy.get('#userCart > #toolTipCart > :nth-child(1) > table > tbody > #product > :nth-child(2) > a > h3.ng-binding').should('include.text', 'BEATS')
   })
 
-  it.only('Visitar home, navegar por uma categoria e adicionar um produto no carrinho', () => {
+  it('Visitar home, navegar por uma categoria e adicionar um produto no carrinho', () => {
     cy.visit(baseUrl)
     cy.get('#speakersImg').click()
     cy.get(':nth-child(1) > :nth-child(4) > .productName').click()
